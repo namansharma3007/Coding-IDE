@@ -9,17 +9,17 @@ import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 
 const App = () => {
-  useEffect(() => {
-    const disableRightClick = (event) => {
-      event.preventDefault();
-    };
+  // useEffect(() => {
+  //   const disableRightClick = (event) => {
+  //     event.preventDefault();
+  //   };
 
-    document.addEventListener('contextmenu', disableRightClick);
+  //   document.addEventListener('contextmenu', disableRightClick);
 
-    return () => {
-      document.removeEventListener('contextmenu', disableRightClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', disableRightClick);
+  //   };
+  // }, []);
 
   return (
     <UserProvider>

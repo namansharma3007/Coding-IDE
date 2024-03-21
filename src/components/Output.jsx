@@ -18,7 +18,6 @@ const Output = ({ editorRef, language }) => {
   const handleInputChange = (event) => {
     setStdin(event.target.value);
   };
-
   const runCode = async () => {
     const sourceCodeRun = editorRef.current.getValue();
     if (!sourceCodeRun) return;

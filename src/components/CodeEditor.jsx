@@ -7,7 +7,7 @@ import Output from "./Output";
 const CodeEditor = () => {
   const editorRef = useRef();
   const [value, setValue] = useState("");
-  const [language, setLanguage] = useState("cpp");
+  const [language, setLanguage] = useState("java");
   const [theme, setTheme] = useState("light");
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
