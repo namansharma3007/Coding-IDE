@@ -8,15 +8,9 @@ const headers = {
   'X-RapidAPI-Key': import.meta.env.VITE_X_RAPID_API_KEY,
   'X-RapidAPI-Host': import.meta.env.VITE_X_RAPID_API_HOST,
 };
-// const apiURL = 'https://coding-ide-server.vercel.app/api';
-// const headers = {
-//   'content-type': 'application/json',
-//   'Content-Type': 'application/json',
-//   'X-RapidAPI-Key': "ec55bec4c6mshe5e771636d22845p1b600fjsnd40f7154e635",
-//   'X-RapidAPI-Host': "judge0-ce.p.rapidapi.com",
-// };
 
 
+// judge api running
 export const generateCodeToken = async (language, sourceCode, stdin) => {
 
   const options = {
