@@ -10,7 +10,7 @@ const headers = {
 };
 
 
-// judge api running
+// judgeCE api running
 export const generateCodeToken = async (language, sourceCode, stdin) => {
 
   const options = {

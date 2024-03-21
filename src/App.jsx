@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import IDE from "./pages/IDE";
 import Submissions from "./pages/Submissions";
-import { UserProvider } from "./context/userContext"; // Import the UserProvider
+import { UserProvider } from "./context/userContext"; 
 import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
 

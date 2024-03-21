@@ -2,7 +2,7 @@ import React from 'react';
 import {useUserContext} from '../hooks/useUserContext'
 import { Navigate } from 'react-router-dom';
 
-const PrivateRoute = ({children}) => {
+const PublicRoute = ({children}) => {
     const {username} = useUserContext();
 
     if(username){
@@ -12,4 +12,4 @@ const PrivateRoute = ({children}) => {
     }
 }
 
-export default PrivateRoute
+export default PublicRoute
