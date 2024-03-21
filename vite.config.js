@@ -13,13 +13,26 @@
 //   };
 // })
 
-import { defineConfig } from 'vite'
-import envCompatible from 'vite-plugin-env-compatible'
-import react from '@vitejs/plugin-react'
+// import { defineConfig } from 'vite'
+// import envCompatible from 'vite-plugin-env-compatible'
+// import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react(),
-  envCompatible(),
-  ],
-})
+// // https://vitejs.dev/config/
+// export default defineConfig({
+//   plugins: [react(),
+//   envCompatible(),
+//   ],
+// })
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig(({ mode }) => {
+  return {
+    plugins: [react()],
+    define: {
+      'process.env': {},
+      'process.version': JSON.stringify(process.version) // Add this line
+    },
+  };
+});
