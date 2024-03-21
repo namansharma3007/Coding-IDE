@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@upstash/redis": "^1.28.4",
     "axios": "^1.6.8",
     "buffer": "^6.0.3",
