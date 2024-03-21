@@ -4,7 +4,7 @@ import redis from "../redis/redis";
 import { useUserContext } from "../hooks/useUserContext";
 
 const Login = () => {
-  const { setUsername, setUserId, setIsLoading } = useUserContext();
+  const { setUsername, setUserId } = useUserContext();
 
   const [usernameLogin, setUsernameLogin] = useState("");
   const [error, setError] = useState(null);
@@ -17,7 +17,6 @@ const Login = () => {
     await redis.set('usernameLogin', data.data[0].username);
     await redis.set('userIdLogin', data.data[0].user_id);
     
-    setIsLoading(false);
   }
   
 
@@ -25,12 +24,10 @@ const Login = () => {
     try {
       const data = await getIndividualDetail(usernameLogin);
       if (data.data.length > 0) {
-        setIsLoading(true);
         setUserContext();
       } else {
         const response = await insertUserName(usernameLogin);
         if (response.status === 200) {
-          setIsLoading(true);
           setUserContext();
         } else {
           setError(

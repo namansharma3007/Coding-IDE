@@ -1,41 +1,14 @@
 import axios from "axios";
 import { languageId } from "../constants/constants";
 
-/**
- * {
-      'content-type': 'application/json',
-      'Content-Type': 'application/json',
-      'X-RapidAPI-Key': 'ec55bec4c6mshe5e771636d22845p1b600fjsnd40f7154e635',
-      'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
-    },
- */
+const apiURL = process.env.VITE_API_URL;
 const headers = {
   'content-type': 'application/json',
   'Content-Type': 'application/json',
-  'X-RapidAPI-Key': 'ec55bec4c6mshe5e771636d22845p1b600fjsnd40f7154e635',
-  'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
+  'X-RapidAPI-Key': process.env.VITE_X_RAPID_API_KEY,
+  'X-RapidAPI-Host': process.env.VITE_X_RAPID_API_HOST,
 };
 
-const apiURL = process.env.VITE_API_URL;
-
-async function getLanguages() {
-
-  const options = {
-    method: 'GET',
-    url: 'https://judge0-ce.p.rapidapi.com/languages',
-    headers: {
-      'X-RapidAPI-Key': '1bd6833320msh30ef75aacc7aaeep1069e0jsn438194e72c06',
-      'X-RapidAPI-Host': 'judge0-ce.p.rapidapi.com'
-    }
-  };
-
-  try {
-    const response = await axios.request(options);
-    console.log(response.data.filter(item=>item.name.includes("Python")));
-  } catch (error) {
-    console.error(error);
-  }
-}
 
 export const generateCodeToken = async (language, sourceCode, stdin) => {
 
