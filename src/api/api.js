@@ -1,12 +1,12 @@
 import axios from "axios";
 import { languageId } from "../constants/constants";
 
-const apiURL = import.meta.env.VITE_API_URL;
+const apiURL = process.env.VITE_API_URL;
 const headers = {
   'content-type': 'application/json',
   'Content-Type': 'application/json',
-  'X-RapidAPI-Key': import.meta.env.VITE_X_RAPID_API_KEY,
-  'X-RapidAPI-Host': import.meta.env.VITE_X_RAPID_API_HOST,
+  'X-RapidAPI-Key': process.env.VITE_X_RAPID_API_KEY,
+  'X-RapidAPI-Host': process.env.VITE_X_RAPID_API_HOST,
 };
 // const apiURL = 'https://coding-ide-server.vercel.app/api';
 // const headers = {

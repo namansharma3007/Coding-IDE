@@ -1,8 +1,8 @@
 import { Redis } from '@upstash/redis'
   
 const redis = new Redis({
-  url: import.meta.env.VITE_UPSTASH_REDIS_REST_URL,
-  token: import.meta.env.VITE_UPSTASH_REDIS_REST_TOKEN,
+  url: process.env.VITE_UPSTASH_REDIS_REST_URL,
+  token: process.env.VITE_UPSTASH_REDIS_REST_TOKEN,
 })
 // const redis = new Redis({
 //   url: "https://able-ape-31684.upstash.io",
