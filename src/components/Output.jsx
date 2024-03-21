@@ -35,7 +35,7 @@ const Output = ({ editorRef, language }) => {
       }
     } catch (error) {
       console.error(error);
-      setIsError("Some internal error occured");
+      setIsError("Internal server error");
     }
   };
 
