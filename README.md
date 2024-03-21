@@ -1,6 +1,16 @@
 # Coding IDE
 
-This project is a coding Integrated Development Environment (IDE) meticulously crafted to empower users in efficiently managing their code snippets. Users can seamlessly register their usernames, store their code snippets, and experience expedited responses through caching. Moreover, it leverages local storage to provide uninterrupted dummy authentication, ensuring users remain logged in until they opt to log out. Upon logging in with a registered username, users gain access to their prior snippets, while newcomers can promptly register an account to begin utilizing the IDE for new code snippets. Additionally, right-click functionality has been disabled for assignment purposes to enhance security measures.
+* **Empowering IDE:** This project offers a meticulously crafted Integrated Development Environment (IDE) tailored to streamline the management of code snippets, fostering efficiency and productivity for users.
+
+* **Seamless User Experience:** Users can effortlessly register their usernames, securely store their code snippets, and enjoy expedited responses facilitated by caching mechanisms, ensuring a smooth and responsive user experience.
+
+* **Enhanced Authentication:** Leveraging local storage, the IDE ensures uninterrupted dummy authentication, allowing users to remain logged in until they actively choose to log out, thus enhancing convenience and accessibility.
+
+* **User Accessibility:** Upon logging in with a registered username, users can readily access their previous snippets, while newcomers can promptly register an account, facilitating easy access to the IDE for creating and managing new code snippets. Additionally, to bolster security measures, right-click functionality has been disabled for assignment purposes.
+
+* **Optimized Fetching:** Caching via Redis has been implemented to expedite the fetching of submissions, further enhancing the efficiency and responsiveness of the IDE.
+
+* **Dummy User Access:** Submissions can be conveniently checked using the dummy user: `dummy123`, ensuring seamless testing and evaluation of the IDE's functionalities.
 
 ## Demo
 
