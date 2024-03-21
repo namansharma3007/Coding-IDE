@@ -11,7 +11,6 @@ const Navbar = () => {
     setUserId(null);
     await redis.del("usernameLogin");
     await redis.del("userIdLogin");
-    await redis.del(`submissions:${username}`);
   }
 
   return (
