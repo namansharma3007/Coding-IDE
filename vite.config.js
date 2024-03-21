@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     define: {
       'process.env': env,
+      'process.browser': true, // Add this line to replace the process object
     },
     base: '/', // Use the VITE_APP_BASE_PATH environment variable, or '/' as the default
   };

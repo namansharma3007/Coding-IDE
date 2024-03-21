@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
     "@upstash/redis": "^1.28.4",
     "axios": "^1.6.8",
     "buffer": "^6.0.3",
-    "node-libs-browser": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
