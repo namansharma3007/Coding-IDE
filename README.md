@@ -1,6 +1,6 @@
 # Coding IDE
 
-This project is a coding Integrated Development Environment (IDE) designed to empower users to efficiently manage their code snippets. Users can register their usernames, save their code snippets, and benefit from caching for swift responses. Additionally, this project utilizes local storage for seamless dummy authentication, allowing users to stay logged in until they choose to log out. Upon logging in with a registered username, users can access their previous snippets, while new users can swiftly register an account to utilize the IDE for new code snippets. ANd also
+This project is a coding Integrated Development Environment (IDE) meticulously crafted to empower users in efficiently managing their code snippets. Users can seamlessly register their usernames, store their code snippets, and experience expedited responses through caching. Moreover, it leverages local storage to provide uninterrupted dummy authentication, ensuring users remain logged in until they opt to log out. Upon logging in with a registered username, users gain access to their prior snippets, while newcomers can promptly register an account to begin utilizing the IDE for new code snippets. Additionally, right-click functionality has been disabled for assignment purposes to enhance security measures.
 
 ## Demo
 
