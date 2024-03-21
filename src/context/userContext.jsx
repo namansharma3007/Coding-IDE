@@ -1,6 +1,4 @@
 import React, { createContext, useState, useEffect } from "react";
-import redis from "../redis/redis";
-
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
@@ -9,9 +7,9 @@ export const UserProvider = ({ children }) => {
 
 
   useEffect(()=>{
-    const fetchDataFromLocalStorage = async () => {
-      const userNameLS = await redis.get('usernameLogin');
-      const userIdLS = await redis.get('userIdLogin');
+    const fetchDataFromLocalStorage = () => {
+      const userNameLS = localStorage.getItem('usernameLogin');
+      const userIdLS = localStorage.getItem('userIdLogin');
       
       if (userNameLS && userIdLS) {
         setUsername(userNameLS);

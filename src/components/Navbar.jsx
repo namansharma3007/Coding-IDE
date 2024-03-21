@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useUserContext } from "../hooks/useUserContext";
-import redis from "../redis/redis";
 
 const Navbar = () => {
   const{username, setUsername, setUserId} = useUserContext();
@@ -9,8 +8,8 @@ const Navbar = () => {
   async function handleLogout(){
     setUsername(null);
     setUserId(null);
-    await redis.del("usernameLogin");
-    await redis.del("userIdLogin");
+    localStorage.removeItem("usernameLogin");
+    localStorage.removeItem("userIdLogin");
   }
 
   return (

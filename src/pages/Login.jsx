@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { getIndividualDetail, insertUserName } from "../api/api";
-import redis from "../redis/redis";
 import { useUserContext } from "../hooks/useUserContext";
 
 const Login = () => {
@@ -14,9 +13,8 @@ const Login = () => {
     setUsername(data.data[0].username);
     setUserId(data.data[0].user_id);
 
-    await redis.set('usernameLogin', data.data[0].username);
-    await redis.set('userIdLogin', data.data[0].user_id);
-    
+    localStorage.setItem('usernameLogin', data.data[0].username);
+    localStorage.setItem('userIdLogin', data.data[0].user_id);
   }
   
 
