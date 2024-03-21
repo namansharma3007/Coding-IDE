@@ -29,7 +29,6 @@ const App = () => {
 
   return (
     <UserProvider>
-      {/* <Navbar /> */}
       <Routes>
         <Route
           path="/login"
