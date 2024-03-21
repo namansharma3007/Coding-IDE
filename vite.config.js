@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
     define: {
-      'process.env': env,
+      'process.env': {}
     },
     base: '/', // Use the VITE_APP_BASE_PATH environment variable, or '/' as the default
   };
