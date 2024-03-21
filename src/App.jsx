@@ -7,7 +7,6 @@ import Submissions from "./pages/Submissions";
 import { UserProvider } from "./context/userContext"; // Import the UserProvider
 import PrivateRoute from "./routes/PrivateRoute";
 import PublicRoute from "./routes/PublicRoute";
-import { useUserContext } from "./hooks/useUserContext";
 
 const App = () => {
   // useEffect(() => {
