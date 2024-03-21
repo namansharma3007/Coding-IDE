@@ -21,11 +21,11 @@ Experience the live demo: [https://coding-ide-submission.netlify.app/](https://c
 
 * Before running this project, ensure you have acquired various APIs and tokens, and place them in the `.env` folder.
 
-## Requirements
+#### `.env` folder requirements
 
 * Backend API: This serves as your backend API for database interactions.
 ```
-VITE_API_URL [Your backend API]
+VITE_API_URL
 ```
 * Upstash/Redis Token and URL from [https://upstash.com/](https://upstash.com/)
 ```
@@ -44,6 +44,36 @@ VITE_X_RAPID_API_KEY
 VITE_X_RAPID_API_HOST
 ```
 
+## Installation
+
+* Please make sure you have `.env` folder setup with all the required variables before running this code.
+* To run Coding IDE locally, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/namansharma3007/Coding-IDE.git
+```
+
+2. Navigate into the project directory:
+
+```
+cd Coding-IDE
+```
+
+3. Install dependencies using npm:
+
+```
+npm install
+```
+
+4. Start the development server:
+
+```
+npm run dev
+```
+
+Open your browser and visit http://localhost:5173 to view the application.
 
 ## IMPORTANT
 
