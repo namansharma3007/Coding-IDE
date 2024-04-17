@@ -104,7 +104,7 @@ const Output = ({ editorRef, language }) => {
       <div className="p-2">
         <p>Custom input</p>
         <textarea
-          className="border rounded border-black w-full"
+          className="border rounded border-black w-full p-1"
           rows="5"
           value={stdin}
           onChange={handleInputChange}
