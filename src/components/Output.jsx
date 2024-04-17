@@ -87,7 +87,6 @@ const Output = ({ editorRef, language }) => {
   return (
     <div className="w-full lg:w-1/2 h-[35rem] bg-white">
       <div className="flex gap-2 p-2 border-b border-gray-300 items-center">
-        <p className="text-gray-700">Output</p>
         <button
           className="px-5 py-1 rounded-lg cursor-pointer border-none bg-gray-400 tex-gray-100 font-semibold transition-all hover:scale-95"
           onClick={runCode}
